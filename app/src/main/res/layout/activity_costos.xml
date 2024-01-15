@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_finanzas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:id="@+id/chooseTaxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="E  L  I  G  E    T  U    T  A  X  I"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText"
+            />
+
+        <LinearLayout
+            android:id="@+id/container_cabify"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/costos_container_azul"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/iv_cabify_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_cabify_lite"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/app_name"
+                    style="@style/margin_services"/>
+
+                <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                    android:id="@+id/tv_cabify_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:background="@null"
+                    android:text="$999.00 - $999.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    tools:ignore="NestedWeights"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_cabify_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_card"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_cabify_money"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_cabify_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_dynamic"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_cabify_pet"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_pet"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_uber"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/costos_container_azul"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:id="@+id/iv_uber_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_uber"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/app_name"
+                    style="@style/margin_services"/>
+
+                <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                    android:id="@+id/tv_uber_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:background="@null"
+                    android:text="$999.00 - $999.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    tools:ignore="NestedWeights"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_uber_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_card"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_uber_money"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_uber_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_dynamic"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_uber_pet"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_pet"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_easytaxi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/costos_container_azul"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/iv_easytaxi_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_cabify_economy"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/app_name"
+                    style="@style/margin_services"/>
+
+                <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                    android:id="@+id/tv_easytaxi_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:background="@null"
+                    android:text="$999.00 - $999.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    tools:ignore="NestedWeights"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_easytaxi_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_card"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_easytaxi_money"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_easytaxi_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_dynamic"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_easytaxi_pet"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_pet"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_bolt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/costos_container_azul"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/iv_bolt_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_bolt"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/app_name"
+                    style="@style/margin_services"/>
+
+                <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                    android:id="@+id/tv_bolt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:background="@null"
+                    android:text="$999.00 - $999.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    tools:ignore="NestedWeights"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_bolt_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_card"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_bolt_money"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_bolt_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_dynamic"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_bolt_pet"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_pet"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_didi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/costos_container_azul"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/iv_didi_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_didi"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/app_name"
+                    style="@style/margin_services"/>
+
+                <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                    android:id="@+id/tv_didi_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="$999.00 - $999.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    tools:ignore="NestedWeights"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_didi_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_card"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_didi_money"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_didi_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_dynamic"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_didi_pet"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_pet"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_beat"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/costos_container_azul"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/iv_beat_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_beat"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/app_name"
+                    style="@style/margin_services"/>
+
+                <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                    android:id="@+id/tv_beat_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:background="@null"
+                    android:text="$999.00 - $999.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    tools:ignore="NestedWeights"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_beat_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_card"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_beat_money"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    style="@style/margin_services">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_beat_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_dynamic"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_beat_pet"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_pet"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

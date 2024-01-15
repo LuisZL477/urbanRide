@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    >
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="329dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Ingresa tu apellido paterno"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Ingresa tu apellido paterno"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Ingresa tu apellido materno"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Ingresa tu nombre"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Ingresa tu correo electrónico"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Ingresa tu contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:hint="Confirma tu contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:backgroundTint="@color/black"
+                android:text="CREAR CUENTA"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

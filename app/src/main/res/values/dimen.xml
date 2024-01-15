@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ahorro_textsize">12sp</dimen>
+    <dimen name="costos_size_container">300dp</dimen>
+    <dimen name="size_iv_service">20dp</dimen>
+</resources>

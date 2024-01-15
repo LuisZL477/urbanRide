@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+    <style name="margin_services">
+        <item name="android:layout_marginLeft">@dimen/size_iv_service</item>
+        <item name="android:layout_marginStart">@dimen/size_iv_service</item>
+        <item name="android:layout_marginRight">@dimen/size_iv_service</item>
+        <item name="android:layout_marginEnd">@dimen/size_iv_service</item>
+    </style>
+
+</resources>

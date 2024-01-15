@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ahorro_barra_azul"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ahorro_barra_rosa"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container_last"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/circulo_rosa" />
+
+            <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                android:background="@null"
+                android:id="@+id/tv_percent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/ahorro_percent"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/circulo_azul"  />
+
+            <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="-67dp"
+                android:layout_marginRight="-67dp"
+                android:layout_toStartOf="@id/tv_pesos"
+                android:layout_toLeftOf="@id/tv_pesos"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/ahorro_signo"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                android:id="@+id/tv_pesos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/ahorro_amount"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+                android:id="@+id/tv_centavos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="-68dp"
+                android:layout_marginLeft="-68dp"
+                android:layout_toEndOf="@id/tv_pesos"
+                android:layout_toRightOf="@id/tv_pesos"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingBottom="18dp"
+                android:text="@string/ahorro_centavos"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_last"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/container_week">
+
+        <ImageView
+            android:id="@+id/iv_item_last"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ahorro_iv_azul"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name" />
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:background="@null"
+            android:id="@+id/tv_last"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="@string/ahorro_last"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ahorro_textsize"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_week"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/container_month">
+
+        <ImageView
+            android:id="@+id/iv_item_week"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ahorro_iv_azul"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name" />
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:background="@null"
+            android:id="@+id/tv_week"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="@string/ahorro_week"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ahorro_textsize"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_month"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/iv_item_month"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ahorro_iv_azul"
+            android:scaleType="centerInside"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name" />
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:background="@null"
+            android:id="@+id/tv_month"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="@string/ahorro_month"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ahorro_textsize"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

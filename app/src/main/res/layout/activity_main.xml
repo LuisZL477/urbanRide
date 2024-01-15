@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/container_origen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:alpha="0.8"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress_origen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/MyProgressBarTwo"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/place_autocomplete_origen"
+            android:layout_toStartOf="@id/ib_origen"
+            android:layout_toLeftOf="@id/ib_origen" />
+
+        <ImageButton
+            android:id="@+id/ib_origen"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_search"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:layout_below="@id/container_origen">
+
+        <ProgressBar
+            android:id="@+id/progress_destino"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/MyProgressBarTwo"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteDestino"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/place_autocomplete_destino"
+            android:layout_toStartOf="@id/ib_destino"
+            android:layout_toLeftOf="@id/ib_destino" />
+
+        <ImageButton
+            android:id="@+id/ib_destino"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_search"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:background="@drawable/buttones_black"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:alpha="0.8"
+            android:clickable="false"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttones_white"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:alpha="0.8"
+            android:clickable="false"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:id="@+id/btn_ahorro"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/finanzas_but"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:alpha="0.3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+            android:id="@+id/btn_calcular_costos"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/calcular_but"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:alpha="0.3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bottom"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<resources>
+
+    <string name="app_name">Urban_Ride</string>
+
+    <string name="title_guest">Invitado</string>
+    <string name="title_origin">Origen</string>
+    <string name="title_destiny">Destino</string>
+
+    <string name="text_app_not_installed">Aplicación no instalada</string>
+    <string name="text_no_travels">No haz tomado ningun viaje</string>
+    <string name="text_invalid_address">Dirección invalida</string>
+    <string name="text_destiny_copied">Destino copiado</string>
+
+    <string name="google_maps_apikey">AIzaSyD66nObkduaB0jyqSVy84nWWPTu5lp4dH4</string>
+    <string name="calcular_but">CALCULAR VIAJE</string>
+    <string name="finanzas_but">AHORRO</string>
+
+    <string name="ahorro_last">Ahorro Último Viaje</string>
+    <string name="ahorro_week">Últimos 5 Viajes</string>
+    <string name="ahorro_month">Ahorro Del Mes</string>
+    <string name="ahorro_percent">0%</string>
+    <string name="ahorro_amount">0.</string>
+    <string name="ahorro_centavos">00</string>
+    <string name="ahorro_signo">$</string>
+
+    <string name="terms">Términos y condiciones</string>
+
+    <string name="costos_amount">$999.00 - $999.00</string>
+    <string name="place_autocomplete_origen">Ingresar Origen:</string>
+    <string name="place_autocomplete_destino">Ingresar Destino:</string>
+
+    <!-- Preferences -->
+    <string name="key_preferences">preferences</string>
+    <string name="key_email">email</string>
+    <string name="key_type">type</string>
+    <string name="key_name">name</string>
+    <string name="key_place">place</string>
+
+    <!-- Database -->
+    <string name="db_name">finanza</string>
+    <string name="db_table_ahorro">main</string>
+    <string name="db_table_history">history</string>
+
+    <string name="db_last">ultimo</string>
+    <string name="db_lastFive">ultimos5</string>
+    <string name="db_lastMonth">ultimomes</string>
+
+    <string name="title_cabify">Cabify</string>
+    <string name="title_uber">Uber</string>
+    <string name="title_easytaxi">Easytaxi</string>
+    <string name="title_bolt">Bolt</string>
+    <string name="title_didi">DiDi</string>
+    <string name="title_beat">Beat</string>
+
+    <string name="id_cabify">com.cabify.rider</string>
+    <string name="id_uber">com.ubercab</string>
+    <string name="id_easyataxi">br.com.easytaxi</string>
+    <string name="id_bolt">ee.mtakso.client</string>
+    <string name="id_didi">com.didiglobal.passenger</string>
+    <string name="id_beat">gr.androiddev.taxibeat</string>
+
+    <string name="facebook_app_id">414894402311883</string>
+    <string name="fb_login_protocol_scheme">fb414894402311883</string>
+
+
+    <string name="BotonLogin">Siguiente</string>
+
+
+</resources>

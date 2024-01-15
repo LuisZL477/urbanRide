@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splashLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+        android:id="@+id/fondoDummy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/splash"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash"
+        app:loopCount="1"
+        android:scaleType="centerCrop" />
+
+    <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+        android:id="@+id/sign_in_invitado"
+        android:layout_width="189dp"
+        android:layout_height="41dp"
+        android:background="@drawable/invitado"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_above="@id/sign_in_facebook"
+        android:layout_marginBottom="41dp" />
+
+    <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+        android:id="@+id/sign_in_facebook"
+        android:layout_width="189dp"
+        android:layout_height="41dp"
+        android:background="@drawable/facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:visibility="invisible"
+        android:layout_above="@id/sign_in_google" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@id/sign_in_google"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="41dp"
+        android:visibility="invisible" />
+
+    <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+        android:id="@+id/sign_in_google"
+        android:layout_width="189dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/google"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+
+    <ImageView
+        android:id="@+id/logo_splash"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:src="@drawable/splash_logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name" />
+
+    <com.example.urban_ride.customviews.ButtonBoldTextgyReadVentor
+        android:id="@+id/tv_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
